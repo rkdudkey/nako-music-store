@@ -1,6 +1,7 @@
 const express = require('express');
 const routes = require('./routes/app');
 var cors = require('cors')
+const path = require('path');
 //set up express app
 const app = express();
 
@@ -27,9 +28,13 @@ app.use((req, res, next) => {
   });
 });
 
-
 //Set up evvironment port if its missing, it can substitue 3000
 const port = process.env.PORT || 3000;
+
+//connect to html
+const publicPath = path.join(__dirname, '/public');
+//pointing to the directory
+app.use(express.static(publicPath));
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
