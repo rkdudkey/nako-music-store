@@ -2,7 +2,7 @@ $(function() {
 
         // GET -  Set the getAllGuitarsButton to display the guitars when clicked
         $("#getAllGuitar").click(() => {
-          fetch("http://localhost:3000/guitar/", {
+          fetch("https://nako-music-store.herokuapp.com/guitar/", {
             method: "GET",
             mode: "cors",
             redirect: "follow",
@@ -40,7 +40,7 @@ $(function() {
             
             $(".bg-modal").css('display', 'flex');
             
-            fetch("http://localhost:3000/guitar/" + id, {
+            fetch("https://nako-music-store.herokuapp.com/guitar/" + id, {
                 method: "GET",
                 mode: "cors",
                 redirect: "follow",
@@ -73,7 +73,7 @@ $(function() {
         //Create a POST route, '/cart/checkout' that all the items in the cart.      
         const userCart = () => {
           let sum = 0;
-          fetch("http://localhost:3000/guitar/checkout/", {
+          fetch("https://nako-music-store.herokuapp.com/guitar/checkout/", {
             method: "POST",
             mode: "cors",
             redirect: "follow",
@@ -149,7 +149,7 @@ const addQuantity = function(){
   let rowEl = $(event.target).closest('tr');
   let id = rowEl.find('.deleteId').text();
 
-  fetch("http://localhost:3000/guitar/cart/add/quantity/"+ id , ({
+  fetch("https://nako-music-store.herokuapp.com/guitar/cart/add/quantity/"+ id , ({
     method: "PUT",
     mode: "cors",
     redirectL: "follow",
@@ -180,7 +180,7 @@ const RemoveQuantity = () => {
     console.log(qty);
 
     if(qty !=  0){
-      fetch("http://localhost:3000/guitar/cart/remove/quantity/"+ id , ({
+      fetch("https://nako-music-store.herokuapp.com/guitar/cart/remove/quantity/"+ id , ({
       method: "PUT",
       mode: "cors",
       redirectL: "follow",
@@ -199,7 +199,7 @@ const RemoveQuantity = () => {
       console.log( `Couldn't post a new entry ${error}`)
     })
   } else if (qty == 0) {
-    fetch("http://localhost:3000/guitar/cart/delete/"+ id , ({
+    fetch("https://nako-music-store.herokuapp.com/cart/delete/"+ id , ({
       method: "DELETE",
       mode: "cors",
       redirectL: "follow",
@@ -220,7 +220,7 @@ const RemoveQuantity = () => {
 }
 
 const addGuitar = function(id){
-  fetch("http://localhost:3000/guitar/cart/add/" + id, {
+  fetch("https://nako-music-store.herokuapp.com/cart/add/" + id, {
     method: "PUT",
     mode: "cors",
     redirect: "follow",
@@ -246,7 +246,7 @@ const deleteGuitar = () => {
   let rowEl = $(event.target).closest('tr');
   let id = rowEl.find('.deleteId').text();
 
-  fetch("http://localhost:3000/guitar/"+ id , {
+  fetch("https://nako-music-store.herokuapp.com/guitar/"+ id , {
     method: "DELETE",
     mode: "cors",
     redirect: "follow",
