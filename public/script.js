@@ -220,7 +220,7 @@ const RemoveQuantity = () => {
 }
 
 const addGuitar = function(id){
-  fetch("https://nako-music-store.herokuapp.com/cart/add/" + id, {
+  fetch("https://nako-music-store.herokuapp.com/guitar/cart/add/" + id, {
     method: "PUT",
     mode: "cors",
     redirect: "follow",
