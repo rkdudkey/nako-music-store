@@ -1,0 +1,55 @@
+ 
+  .bg-modal {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-contents {
+	height: 950px;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+    position: relative;
+    border-radius: 4px;
+    margin-top: -70%;
+    
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	cursor: pointer;
+}
+
+#close-icon {
+      width: 20px;
+}
+
+#addUserCart{
+  margin-top: 70px;
+}
+
+.btn {
+  width: 150px;
+}
+
+.btn-qty {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 35px;
+  width: 150px
+}
+
+#qty-delete{
+  width: 150px;
+}

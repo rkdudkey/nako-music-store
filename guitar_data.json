@@ -1,0 +1,43 @@
+[
+    {
+        "guitar_id" : 1,
+        "name" : "Gibson SG",
+        "SKU" : "K58368",
+        "description" : "The iconic Les Paul Standard is celebrated by the worlds greatest musicians as the standard for perfection in the world of electric guitars. The new Les Paul Standard features the popular asymmetrical SlimTaper neck profile with Ultra-Modern weight relief for increased comfort and playability. Impeccable looks are highlighted by the powerful tonewood combination of mahogany back and carved maple AAA figured top. BurstBucker Pro humbuckers provide modern and classic tones, while immense tonal variety from comes from 4 push-pull knobs. Includes hardshell case.",
+        "features" : [
+            "Body shape: Single cutaway",
+            "Body type: Solid body",
+            "Body material: Solid wood",
+            "Top wood: AAA figured maple",
+            "Body wood: Ultra-modern weight relieved mahogany",
+            "Body finish: Gloss",
+            "Orientation: Right handed"
+        ]
+    },
+    {
+        "guitar_id" : 2,
+        "name" : "Fender StratoCaster",
+        "SKU": "L29427",
+        "caption": "For serious players",
+        "description": "With performance-focused features such as a hybrid neck profile and an innovative truss rod adjustment wheel, the American Elite Stratocaster continues to be one of the best modern Strats for the money. Its maple neck has a modern 'C' shape at the nut, morphing into a modern 'D' profile at the neck heel for faster lead playing and comfortable chording. And speaking of the heel, Fender's asymmetrical neck volute provides superior access to higher frets. The expanded S-1 pickup switching system will give even veteran Strat players a reason to upgrade. Fender's tremolo system is also better than ever for the American Elite, with a smoother response and a copper-infused bridge plate to help fight tuning slippage",
+        "features": [
+            "Seymour Duncan� JB/�59 humbucking pickups",
+            "Double-locking tremolo system",
+            "6-in-line matching headstock",
+            "Mahogany body with bevels",
+            "Ultra-fast one-piece maple neck"
+        ]
+    },
+    {
+        "guitar_id": 3,
+        "name": "Pro Series King V KV",
+        "SKU": "K35707",
+        "caption": "Good, Authentic Mexican Guitars",
+        "review": "So real the American kids can't get enough.",
+        "features": [
+            "Not heavy, not light - perfection on 6 strings",
+            "The best cheap money can buy",
+            "The Lord of the Rings has 2"
+        ]
+    }
+]
